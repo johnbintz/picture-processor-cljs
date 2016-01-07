@@ -6,13 +6,14 @@
   :plugins [[lein-cljsbuild "1.1.2"]
             [lein-npm "0.6.1"]]
   :source-paths ["src"]
-  :npm { :dependencies [[ws "0.4.30"] ]}
+  :npm { :dependencies [[ws "0.4.30"]]}
   :cljsbuild {
               :builds [{:source-paths ["src"]
                         :compiler {
                                    :target :nodejs
                                    :optimizations :simple}}]}
-  :profiles {:dev {:dependencies [[com.cemerick/piggieback "0.2.1"]
+  :profiles {:dev {:source-paths ["dev-src"]
+                   :dependencies [[com.cemerick/piggieback "0.2.1"]
                                   [org.clojure/tools.nrepl "0.2.10"]]
                    :repl-options {:nrepl-middleware [cemerick.piggieback/wrap-cljs-repl]
                                   :init (do

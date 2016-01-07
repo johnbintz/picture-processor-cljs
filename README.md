@@ -2,9 +2,16 @@
 
 A Clojure library designed to ... well, that part is up to you.
 
-## Usage
+## REPL
 
-FIXME
+### serverside with vim-fireplace and Piggieback
+
+* `lein repl`
+* In the repl, `(start)` to launch a cljs repl.
+* In vim, `:Connect`, then `:Piggieback (weasel.repl.websocket/repl-env :port 45192)`
+* In the cljs repl, `(require 'picture-processor.repl)`
+* ...and then `(picture-processor.repl/start 45192)`
+* Evaluate away!
 
 ## License
 
