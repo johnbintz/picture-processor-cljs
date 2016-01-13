@@ -12,5 +12,6 @@ pom.xml.asc
 /.repl-*
 /.cljs_node_repl/
 /public/out
+/public/index.js
 /images
 

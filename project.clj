@@ -7,7 +7,8 @@
             [lein-npm "0.6.1"]]
   :source-paths ["src/server" "src/client"]
   :npm { :dependencies [[ws "0.4.30"]
-                        [imagemagick-native "https://github.com/elad/node-imagemagick-native.git"]]}
+                        [imagemagick-native "https://github.com/elad/node-imagemagick-native.git"]
+                        [express "4.13.3"]]}
   :cljsbuild {
               :builds [{:source-paths ["src/server"]
                         :compiler {
@@ -45,4 +46,5 @@
                  [org.clojure/clojurescript "1.7.170"]
                  [org.omcljs/om "0.9.0"]
                  [sablono "0.3.6"]
+                 [cljs-http "0.1.39"]
                  ])
