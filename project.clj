@@ -8,7 +8,9 @@
   :source-paths ["src/server" "src/client"]
   :npm { :dependencies [[ws "0.4.30"]
                         [imagemagick-native "https://github.com/elad/node-imagemagick-native.git"]
-                        [express "4.13.3"]]}
+                        [express "4.13.3"]
+                        [sqlite3 "3.1.1"]
+                        [db-migrate "0.9.23"]]}
   :cljsbuild {
               :builds [{:source-paths ["src/server"]
                         :compiler {
