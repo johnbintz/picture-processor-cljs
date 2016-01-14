@@ -1,4 +1,4 @@
-(ns picture-processor.images)
+(ns picture-processor.images.process)
 
 (def fs (js/require "fs"))
 (def imagemagick (js/require "imagemagick-native"))
